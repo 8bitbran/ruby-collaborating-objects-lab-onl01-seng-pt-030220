@@ -7,11 +7,12 @@ class MP3Importer
   end 
   
   def files
-    @new_files = Dir[]
+    @new_files = Dir["#{@path}/*"].collect {|file| File.basename(file)}
+    @new_files
   end
   
   def import
-    new_files.each do |file|
+    @new_files.each do |file|
       Song.new_by_filename(file)
     end
   end 
