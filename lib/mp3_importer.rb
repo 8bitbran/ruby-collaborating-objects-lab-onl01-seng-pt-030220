@@ -1,4 +1,7 @@
 class MP3Importer
+  
+  def initialize()
+  
   def files(filenames)
     
   end
