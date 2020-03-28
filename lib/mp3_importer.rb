@@ -11,7 +11,7 @@ class MP3Importer
     new_files
   end
   
-  def import(filenames)
-    
+  def import(new_files)
+    new_files.each do 
   end 
 end
