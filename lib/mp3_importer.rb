@@ -7,8 +7,7 @@ class MP3Importer
   end 
   
   def files
-    @new_files = Dir["#{@path}/*"].collect {|file| File.basename(file)}
-    @new_files
+    Dir["#{@path}/*"].collect {|file| File.basename(file)}
   end
   
   def import
