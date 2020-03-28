@@ -7,7 +7,7 @@ class MP3Importer
   end 
   
   def files
-    @@new_files
+    @new_files = Dir[]
   end
   
   def import
